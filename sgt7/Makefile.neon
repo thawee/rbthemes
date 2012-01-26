@@ -32,6 +32,7 @@ export SOFTWARECODECS=yes
 export EXTRA_DEFINES= -DAPPLICATION
 export HOSTCC=/usr/bin/gcc
 export HOSTAR=/usr/bin/ar
+export CPP=/opt/android-ndk-r6/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/arm-linux-androideabi-cpp
 export CC=/opt/android-ndk-r6/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/arm-linux-androideabi-gcc
 export LD=/opt/android-ndk-r6/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/arm-linux-androideabi-ar
 export AR=/opt/android-ndk-r6/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/arm-linux-androideabi-ar
@@ -44,6 +45,7 @@ export RANLIB=/opt/android-ndk-r6/toolchains/arm-linux-androideabi-4.4.3/prebuil
 export PREFIX=
 export PROFILE_OPTS=
 export APP_TYPE=android
+export ARCH=arm
 export APPLICATION=yes
 export SIMDIR=$(ROOTDIR)/uisimulator/sdl
 export GCCOPTS=-W -Wall  -O   -Wstrict-prototypes -pipe -std=gnu99 -ffunction-sections -fomit-frame-pointer --sysroot=/opt/android-ndk-r6/platforms/android-8/arch-arm  -Wno-pointer-sign -Wno-override-init -fPIC -DANDROID -Wno-psabi -fsigned-char -mfloat-abi=softfp -mfpu=neon -mcpu=cortex-a8 -mtune=cortex-a8
