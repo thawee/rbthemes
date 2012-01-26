@@ -1,0 +1,40 @@
+
+<wps>
+Name: DFKT_mod.wps
+RWPS:
+SBS: DFKT_mod.sbs
+RSBS:
+# Real name of the creator of the WPS
+Author: Thawee
+
+# Preferred font (including .fnt extension - leave blank for player):
+Font.600x1024x16: 46-DroidSansThai.fnt
+
+#misc settings that should be ignored on grayscale targets
+foreground color: FFFFFF
+background color: 000000
+line selector start color: fde89e
+line selector end color: b58c00
+line selector text color: 000000
+filetype colours:
+
+#backdrop - remember this is the source file name in your SVN folder, not dest name!
+backdrop.600x1024x16: /.rockbox/wps/DFKT_mod/backdrop-sbs-600x1024x16.bmp
+
+#selection bar settings for color targets
+selector type.600x1024x16: bar (gradient)
+
+#icons
+iconset.600x1024x16: icons/tango_icons.32x32.bmp
+
+#viewer icons
+viewers iconset.600x1024x16: icons/tango_icons_viewers.32x32.bmp
+
+# Whether the WPS is designed to have the statusbar on or off
+Statusbar: off
+remote statusbar: off
+
+# list & remote ui viewports
+ui viewport:
+remote ui viewport:
+</wps>
