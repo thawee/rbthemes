@@ -1,0 +1,9 @@
+1. checkout rockbox from rockbox.git
+2. add remote rbthemes
+  git remote add rbthemes 
+3. check out from rbthemes
+4. apply fix
+ $cd wps
+ $cat WPSLIST.DTK_mod >> WPSLIST
+ $cd ../
+5. build and build apk 
