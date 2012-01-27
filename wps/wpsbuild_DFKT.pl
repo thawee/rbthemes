@@ -167,9 +167,12 @@ sub copythemefont
 
     $o =~ s/\.fnt/\.bdf/;
     mkdir "$tempdir/fonts";
+    if (-e "$ROOT/fonts/$o") {
+	print "File Existed"
     my $cmd ="$ROOT/tools/convbdf -f -o \"$tempdir/fonts/$_[0]\" \"$ROOT/fonts/$o\" ";
     `$cmd`;
-    my $cmd ="cp \"$ROOT/fonts/*.fnt" \"$tempdir/fonts/\" ";
+    }
+    my $cmd ="cp $ROOT/fonts/*.fnt $tempdir/fonts/.";
     `$cmd`;
 }
 
