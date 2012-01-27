@@ -31,6 +31,10 @@
 %xl(f,button-ffwd-600x1024x16.bmp,0,0)
 %xl(n,nocover-600x1024x16.bmp,0,0)
 
+%xl(c,playbackmode-600x1024x16.bmp,0,0,9)
+%xl(d,repeatmode-600x1024x16.bmp,0,0,4)
+%xl(e,battery-600x1024x16.bmp,0,0,7)
+
 ###### File info
 %V(0,14,-,16,3) %Vf(adae99) %Vb(000000)
 %al%?fb<%?fv<%fbk VBR|%fbk CBR>|> %fc%ac%?iv<ID3 v%iv|>%ar%fkkHz
