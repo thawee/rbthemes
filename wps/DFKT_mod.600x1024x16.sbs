@@ -14,7 +14,7 @@
 %Tp
 
 ###### Backdrop
-%X(backdrop-sbs-600x1024x16.bmp)
+#%X(backdrop-sbs-600x1024x16.bmp)
 
 ###### Preload Fonts
 %Fl(2,46-DroidSansThai.fnt)

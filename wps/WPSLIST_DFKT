@@ -9,6 +9,7 @@ Author: Thawee
 
 # Preferred font (including .fnt extension - leave blank for player):
 Font.600x1024x16: 46-DroidSansThai.fnt
+Font: 40-DroidSansThai.fnt
 Font: 12-Terminus.fnt
 
 #misc settings that should be ignored on grayscale targets
@@ -20,7 +21,7 @@ line selector text color: 000000
 filetype colours:
 
 #backdrop - remember this is the source file name in your SVN folder, not dest name!
-backdrop.600x1024x16: /.rockbox/wps/DFKT_mod/backdrop-sbs-600x1024x16.bmp
+backdrop.600x1024x16: backdrops/backdrop-sbs-600x1024x16.bmp
 
 #selection bar settings for color targets
 selector type.600x1024x16: bar (gradient)
