@@ -17,9 +17,9 @@
 %X(backdrop-wps-600x1024x16.bmp)
 
 ###### Preload Fonts
-%Fl(2,46-DroidSansThai.fnt)
+%Fl(2,46-THSarabunNew.fnt)
 %Fl(3,12-Terminus.fnt)
-%Fl(4,40-DroidSansThai.fnt)
+%Fl(4,40-THSarabunNew.fnt)
 
 ###### Preload Images
 %xl(b,progressbar-bg-600x1024x16.bmp,0,0)

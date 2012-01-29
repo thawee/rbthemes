@@ -8,8 +8,8 @@ RSBS:
 Author: Thawee
 
 # Preferred font (including .fnt extension - leave blank for player):
-Font.600x1024x16: 46-DroidSansThai.fnt
-Font: 40-DroidSansThai.fnt
+Font.600x1024x16: 46-THSarabunNew.fnt
+Font: 40-THSarabunNew.fnt
 Font: 12-Terminus.fnt
 
 #misc settings that should be ignored on grayscale targets

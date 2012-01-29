@@ -172,8 +172,8 @@ sub copythemefont
     my $cmd ="$ROOT/tools/convbdf -f -o \"$tempdir/fonts/$_[0]\" \"$ROOT/fonts/$o\" ";
     `$cmd`;
     }
-    my $cmd ="cp $ROOT/fonts/*.fnt $tempdir/fonts/.";
-    `$cmd`;
+    my $cmd2 ="cp $ROOT/fonts/*.fnt $tempdir/fonts/.";
+    `$cmd2`;
 }
 
 sub copythemeicon
