@@ -1,0 +1,38 @@
+#! rockbox/tagbrowser/2.0
+# ^ Version header must be the first line of every file
+
+# Tag Browser configuration file, do not edit as changes will be lost!
+# Instead, you can modify "/.rockbox/tagnavi_custom.config" which will never
+# get overwritten automatically.
+
+# Basic format declarations
+%format "fmt_title"       "%s (%s)" title artist
+%format "fmt_mostplayed" "%2d|%3d%s (%s)" playcount autoscore title artist %sort = "inverse" %limit = "100" %strip = "6"
+%format "fmt_lastplayed"  "%06d%s - %s" lastplayed title artist %sort = "inverse" %limit = "100" %strip = "6"
+
+%format "fmt_direct" "%s (%s)" title artist
+%format "fmt_mood" "%s (%s)" title artist
+%format "fmt_genre" "%s (%s)" title artist
+
+#
+# === Begin of main menu
+#
+
+# Define the title of the main menu
+%menu_start "main" "Database"
+"All Tracks"    -> title = "fmt_direct" ? genre != "<Untagged>"
+"All English Tracks" -> title = "fmt_mood" ? genre @ "Pop|Rock|Jazz|Electro|Bossa Nova|Audiophile"
+"All Thai Tracks" -> title = "fmt_mood" ? genre ~ "Thai"
+"All LungTung & MohLum" -> title = "fmt_mood" ? genre @ "Thai LungTung|Thai LungKrung"
+"All Rockin' Out" -> title = "fmt_mood" ? genre @ "Thai Rock|Rock"
+"All Soundtrack" -> title = "fmt_mood" ? album ~ "Ost."
+"Browse Artist"   -> artist   -> title = "fmt_title" ? artist != "<Untagged>"
+"Browse Genre"    -> genre    -> title = "fmt_genre" ? genre != "<Untagged>"
+"Most Played" -> title = "fmt_mostplayed" ? playcount > "0"
+"Never Played" -> title = "fmt_title" ? playcount == "0"
+"Recently Played" -> title = "fmt_lastplayed" ? playcount > "0"
+
+# And finally set main menu as our root menu
+%root_menu "main"
+
+#EOF
