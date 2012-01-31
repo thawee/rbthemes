@@ -1,0 +1,76 @@
+## Automatically generated. http://www.rockbox.org/
+
+export ROOTDIR=/home/ubuntu/rockbox
+export FIRMDIR=$(ROOTDIR)/firmware
+export APPSDIR=$(ROOTDIR)/apps
+export TOOLSDIR=$(ROOTDIR)/tools
+export DOCSDIR=/home/ubuntu/rockbox/docs
+export MANUALDIR=/home/ubuntu/rockbox/manual
+export DEBUG=
+export MODELNAME=android
+export ARCHOSROM=
+export FLASHFILE=
+export TARGET_ID=74
+export TARGET=-DANDROID
+export CPU=hosted
+export MANUFACTURER=android
+export OBJDIR=/home/ubuntu/rockbox/sgt7
+export BUILDDIR=/home/ubuntu/rockbox/sgt7
+export LANGUAGE=english
+export VOICELANGUAGE=
+export MEMORYSIZE=8
+export BUILDDATE:=$(shell date -u +'-DYEAR=%Y -DMONTH=%m -DDAY=%d')
+export MKFIRMWARE=cp 
+export BMP2RB_MONO=/home/ubuntu/rockbox/tools/bmp2rb -f 0
+export BMP2RB_NATIVE=/home/ubuntu/rockbox/tools/bmp2rb -f 4
+export BMP2RB_REMOTEMONO=
+export BMP2RB_REMOTENATIVE=
+export BINARY=librockbox.so
+export APPEXTRA=recorder:gui:radio:hosted/android
+export ENABLEDPLUGINS=no
+export SOFTWARECODECS=yes
+export EXTRA_DEFINES= -DAPPLICATION
+export HOSTCC=/usr/bin/gcc
+export HOSTAR=/usr/bin/ar
+export CPP=/opt/android-ndk-r6/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/arm-linux-androideabi-cpp
+export CC=/opt/android-ndk-r6/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/arm-linux-androideabi-gcc
+export LD=/opt/android-ndk-r6/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/arm-linux-androideabi-ar
+export AR=/opt/android-ndk-r6/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/arm-linux-androideabi-ar
+export AS=/opt/android-ndk-r6/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/arm-linux-androideabi-as
+export OC=/opt/android-ndk-r6/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/arm-linux-androideabi-objcopy
+export WINDRES=arm-linux-androideabi-windres
+export DLLTOOL=arm-linux-androideabi-dlltool
+export DLLWRAP=arm-linux-androideabi-dllwrap
+export RANLIB=/opt/android-ndk-r6/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/arm-linux-androideabi-ranlib
+export PREFIX=
+export PROFILE_OPTS=
+export APP_TYPE=android
+export ARCH=arm
+export APPLICATION=yes
+export SIMDIR=$(ROOTDIR)/uisimulator/sdl
+export GCCOPTS=-W -Wall  -O   -Wstrict-prototypes -pipe -std=gnu99 -ffunction-sections -fomit-frame-pointer --sysroot=/opt/android-ndk-r6/platforms/android-8/arch-arm  -Wno-pointer-sign -Wno-override-init -fPIC -DANDROID -Wno-psabi -fsigned-char -mfloat-abi=softfp -mfpu=neon -mcpu=cortex-a8 -mtune=cortex-a8
+export TARGET_INC=-I$(FIRMDIR)/target/hosted/android/app -I$(FIRMDIR)/target/hosted/android -I$(FIRMDIR)/target/hosted
+export LOADADDRESS=
+export SHARED_LDFLAG=-shared
+export SHARED_CFLAGS=
+export LDOPTS= -shared -nostdlib -ldl -llog
+export GLOBAL_LDOPTS= -nostdlib -lc -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack 		--sysroot=/opt/android-ndk-r6/platforms/android-8/arch-arm
+export GCCVER=4.4.3
+export GCCNUM=404
+export UNAME=Linux
+export MANUALDEV=android
+export TTS_OPTS=
+export TTS_ENGINE=
+export ENC_OPTS=
+export ENCODER=
+export USE_ELF=
+export RBDIR=/.rockbox
+export ROCKBOX_SHARE_PATH=/data/data/org.rockbox/app_rockbox/rockbox
+export ROCKBOX_BINARY_PATH=/data/data/org.rockbox/lib
+export ROCKBOX_LIBRARY_PATH=/data/data/org.rockbox/app_rockbox
+export SDLCONFIG=
+export LCDORIENTATION=portrait
+
+CONFIGURE_OPTIONS=--lcdwidth=600 --lcdheight=1024 --target=$(MODELNAME) --ram=$(MEMORYSIZE) --rbdir=$(RBDIR) --type=N
+
+include $(TOOLSDIR)/root.make
