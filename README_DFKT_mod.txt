@@ -1,3 +1,11 @@
+galaxy tab (gt7)
+ screen: 600x1024
+ CPU: Arm A8 neon
+ 
+meizu m9 (m9)
+ screen: 640x960
+ CPU: Arm A8 neon
+
 1. checkout rockbox from rockbox.git
  $git clone 
 2. add remote rbthemes

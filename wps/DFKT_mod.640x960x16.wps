@@ -1,0 +1,94 @@
+###################################################
+#                                                 #
+#  Theme           DFKT Minimum Mode 640x960     #
+#  Author          Thawee (Martin Sägmüller       #
+#  Target          RaaA (640x960x16)             #
+#  Version         0.24                           #
+#  Last updated    2011 12 23                     #
+#  License         CC-BY-SA 3.0                   #
+#                                                 #
+###################################################
+
+###### Main
+%we
+%Tp
+
+###### Backdrop
+%X(backdrop-wps-640x960x16.bmp)
+
+###### Preload Fonts
+%Fl(2,40-Loma-Bold.fnt)
+%Fl(3,12-Terminus.fnt)
+%Fl(4,36-Loma-Bold.fnt)
+
+###### Preload Images
+%xl(b,progressbar-bg-640x960x16.bmp,0,0)
+%xl(r,button-rew-640x960x16.bmp,0,0)
+%xl(p,button-play-640x960x16.bmp,0,0)
+%xl(q,button-play-switch-640x960x16.bmp,0,0)
+%xl(P,button-pause-640x960x16.bmp,0,0)
+%xl(Q,button-pause-switch-640x960x16.bmp,0,0)
+%xl(f,button-ffwd-640x960x16.bmp,0,0)
+%xl(n,nocover-640x960x16.bmp,0,0)
+
+%xl(c,playbackmode-640x960x16.bmp,0,0,9)
+%xl(d,repeatmode-640x960x16.bmp,0,0,4)
+%xl(e,battery-640x960x16.bmp,0,0,7)
+
+###### File info
+%V(0,14,-,16,3) %Vf(adae99) %Vb(000000)
+%al%?fb<%?fv<%fbk VBR|%fbk CBR>|> %fc%ac%?iv<ID3 v%iv|>%ar%fkkHz
+
+###### Track info
+%V(0,28,-,140,4) %Vf(ffffff) %Vb(000000)
+%T(0,0,640,140,browse)
+%T(0,0,640,140,menu,long_press)
+%ac%s%?ia<%ia|%d(1)>
+%Vf(adae99)
+%ac%s%?id<%id %?iy<%(%iy%)|>|%fn>
+%Vf(ffffff)
+%ac%s%?it<%it|>
+
+###### Album art 
+%V(10,200,620,540,-) %Vf(adae99) %Vb(000000)
+%T(0,40,620,540,quickscreen)
+%T(0,40,620,540,contextmenu,long_press)
+%Cl(0,0,620,540,c)
+%?C<%Cd|%xd(n)>
+
+###### Progress bar 
+%V(0,770,-,32,-) %Vf(adae99) %Vb(000000)
+%xd(b)
+%T(0,0,640,32,progressbar)
+%pb(0,0,640,32,progressbar-640x960x16.bmp)
+
+###### Peak meter
+%V(0,770,-,32,-) %Vf(adae99) %Vb(000000)
+%pL(0,1,639,4,peakmeter-640x960x16.bmp)
+%pR(0,27,639,4,peakmeter-640x960x16.bmp)
+
+###### Time info
+%V(0,810,-,13,3) %Vf(adae99) %Vb(333333)
+%al%?mp<-:--|%pc|%pc|%pc|%pc>%ac%?mp<-:--|%pt|%pt|%pt|%pt>%ar%?mp<-:--|%pr|%pr|%pr|%pr>
+
+###### Example: %?mp<Stop|Play|Pause|Ffwd|Rew|Rec|Rec pause|FM|FM pause>
+
+###### Rewind/Skip
+%V(60,832,139,102,-) %Vf(ffffff) %Vb(000000)
+%T(60,0,139,102,prev)
+%T(skiprwd,60,0,139,102,rwd,repeat_press)
+%?mp<||||%?Tl(skiprwd,0.1)<%xd(r)|%xd(r)>||||>
+%?Tl(skiprwd,0.1)<%xd(r)|>
+
+###### Play/Pause/Stop
+%V(200,833,200,102,-) %Vf(ffffff) %Vb(000000)
+%T(play,60,0,200,102,play)
+%T(60,0,200,102,stop,long_press)
+%?mp<|%?Tl(play,0.1)<%xd(Q)|%xd(P)>|%?Tl(play,0.1)<%xd(q)|%xd(p)>||||||>
+
+###### Forward/Skip
+%V(401,832,139,102,-) %Vf(ffffff) %Vb(000000)
+%T(60,0,139,102,ffwd,repeat_press)
+%T(skipffwd,60,0,139,102,next)
+%?mp<|||%?Tl(skipffwd,0.1)<%xd(f)|%xd(f)>|||||>
+%?Tl(skipffwd,0.1)<%xd(f)|>
