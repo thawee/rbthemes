@@ -35,19 +35,34 @@
 %xl(d,repeatmode-640x960x16.bmp,0,0,4)
 %xl(e,battery-640x960x16.bmp,0,0,7)
 
+#%xl(g,mp_repeat_off_btn.bmp,0,0)
+#%xl(h,mp_repeat_on_btn.bmp,0,0)
+#%xl(i,mp_shuffle_off_btn.bmp,0,0)
+#%xl(j,mp_shuffle_once_btn.bmp,0,0)
+#%xl(k,mp_shuffle_all_btn.bmp,0,0)
+
 ###### File info
 %V(0,14,-,16,3) %Vf(adae99) %Vb(000000)
 %al%?fb<%?fv<%fbk VBR|%fbk CBR>|> %fc%ac%?iv<ID3 v%iv|>%ar%fkkHz
 
 ###### Track info
-%V(0,28,-,140,4) %Vf(ffffff) %Vb(000000)
-%T(0,0,640,140,browse)
-%T(0,0,640,140,menu,long_press)
-%ac%s%?ia<%ia|%d(1)>
+%V(100,28,440,140,4) %Vf(ffffff) %Vb(000000)
+#%T(0,0,640,140,browse)
+#%T(0,0,640,140,menu,long_press)
 %Vf(adae99)
-%ac%s%?id<%id %?iy<%(%iy%)|>|%fn>
+%ac%s%?ia<%ia|%d(1)>
 %Vf(ffffff)
 %ac%s%?it<%it|>
+%Vf(adae99)
+%ac%s%?id<%id %?iy<%(%iy%)|>|%fn>
+
+###### Repeat mode %?mm<Off|All|One|Shuffle|A-B>
+#%V(40,56,48,48,-) %Vf(ffffff) %Vb(000000)
+#%?mm<%xd(i)|%xd(k)|%xd(j)|%xd(k)>
+
+###### shuffle mode
+#%V(586,56,48,48,-) %Vf(ffffff) %Vb(000000)
+#%?ps<%xd(g)|%xd(h)>
 
 ###### Album art 
 %V(10,200,620,540,-) %Vf(adae99) %Vb(000000)
@@ -74,20 +89,20 @@
 ###### Example: %?mp<Stop|Play|Pause|Ffwd|Rew|Rec|Rec pause|FM|FM pause>
 
 ###### Rewind/Skip
-%V(80,837,139,102,-) %Vf(ffffff) %Vb(000000)
+%V(80,840,139,102,-) %Vf(ffffff) %Vb(000000)
 %T(60,0,139,102,prev)
 %T(skiprwd,60,0,139,102,rwd,repeat_press)
 %?mp<||||%?Tl(skiprwd,0.1)<%xd(r)|%xd(r)>||||>
 %?Tl(skiprwd,0.1)<%xd(r)|>
 
 ###### Play/Pause/Stop
-%V(220,835,200,102,-) %Vf(ffffff) %Vb(000000)
+%V(220,838,200,102,-) %Vf(ffffff) %Vb(000000)
 %T(play,60,0,200,102,play)
 %T(60,0,200,102,stop,long_press)
 %?mp<|%?Tl(play,0.1)<%xd(Q)|%xd(P)>|%?Tl(play,0.1)<%xd(q)|%xd(p)>||||||>
 
 ###### Forward/Skip
-%V(420,837,139,102,-) %Vf(ffffff) %Vb(000000)
+%V(420,840,139,102,-) %Vf(ffffff) %Vb(000000)
 %T(60,0,139,102,ffwd,repeat_press)
 %T(skipffwd,60,0,139,102,next)
 %?mp<|||%?Tl(skipffwd,0.1)<%xd(f)|%xd(f)>|||||>
