@@ -74,20 +74,20 @@
 ###### Example: %?mp<Stop|Play|Pause|Ffwd|Rew|Rec|Rec pause|FM|FM pause>
 
 ###### Rewind/Skip
-%V(60,832,139,102,-) %Vf(ffffff) %Vb(000000)
+%V(80,837,139,102,-) %Vf(ffffff) %Vb(000000)
 %T(60,0,139,102,prev)
 %T(skiprwd,60,0,139,102,rwd,repeat_press)
 %?mp<||||%?Tl(skiprwd,0.1)<%xd(r)|%xd(r)>||||>
 %?Tl(skiprwd,0.1)<%xd(r)|>
 
 ###### Play/Pause/Stop
-%V(200,833,200,102,-) %Vf(ffffff) %Vb(000000)
+%V(220,835,200,102,-) %Vf(ffffff) %Vb(000000)
 %T(play,60,0,200,102,play)
 %T(60,0,200,102,stop,long_press)
 %?mp<|%?Tl(play,0.1)<%xd(Q)|%xd(P)>|%?Tl(play,0.1)<%xd(q)|%xd(p)>||||||>
 
 ###### Forward/Skip
-%V(401,832,139,102,-) %Vf(ffffff) %Vb(000000)
+%V(420,837,139,102,-) %Vf(ffffff) %Vb(000000)
 %T(60,0,139,102,ffwd,repeat_press)
 %T(skipffwd,60,0,139,102,next)
 %?mp<|||%?Tl(skipffwd,0.1)<%xd(f)|%xd(f)>|||||>
