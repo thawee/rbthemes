@@ -71,6 +71,6 @@ export ROCKBOX_LIBRARY_PATH=/data/data/org.rockbox/app_rockbox
 export SDLCONFIG=
 export LCDORIENTATION=portrait
 
-CONFIGURE_OPTIONS=--lcdwidth=600 --lcdheight=1024 --target=$(MODELNAME) --ram=$(MEMORYSIZE) --rbdir=$(RBDIR) --type=N
+CONFIGURE_OPTIONS=--lcdwidth=640 --lcdheight=960 --target=$(MODELNAME) --ram=$(MEMORYSIZE) --rbdir=$(RBDIR) --type=N
 
 include $(TOOLSDIR)/root.make
