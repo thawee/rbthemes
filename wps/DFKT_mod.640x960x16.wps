@@ -56,10 +56,12 @@
 ###### Repeat mode %?mm<Off|All|One|Shuffle|A-B>
 %V(40,56,48,48,-) %Vf(ffffff) %Vb(000000)
 %?mm<%xd(i,1)|%xd(i,3)|%xd(i,2)|%xd(i,3)|%xd(i,3)>
+%T(0,0,48,48,repmode)
 
 ###### shuffle mode
-%V(586,56,48,48,-) %Vf(ffffff) %Vb(000000)
+%V(552,56,48,48,-) %Vf(ffffff) %Vb(000000)
 %?ps<%xd(j,1)|%xd(j,2)>
+%T(0,0,48,48,shuffle)
 
 ###### Album art (640x600) 
 %V(0,180,640,600,-) %Vf(adae99) %Vb(000000)
