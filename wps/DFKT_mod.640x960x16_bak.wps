@@ -64,11 +64,11 @@
 #%V(586,56,48,48,-) %Vf(ffffff) %Vb(000000)
 #%?ps<%xd(g)|%xd(h)>
 
-###### Album art (640x600) 
-%V(0,180,640,600,-) %Vf(adae99) %Vb(000000)
-#%T(0,40,620,540,quickscreen)
-#%T(0,40,620,540,contextmenu,long_press)
-%Cl(0,0,640,600,c)
+###### Album art 
+%V(10,200,620,540,-) %Vf(adae99) %Vb(000000)
+%T(0,40,620,540,quickscreen)
+%T(0,40,620,540,contextmenu,long_press)
+%Cl(0,0,620,540,c)
 %?C<%Cd|%xd(n)>
 
 ###### Progress bar 
