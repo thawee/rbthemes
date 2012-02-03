@@ -35,11 +35,11 @@
 %xl(d,repeatmode-640x960x16.bmp,0,0,4)
 %xl(e,battery-640x960x16.bmp,0,0,7)
 
-#%xl(g,mp_repeat_off_btn.bmp,0,0)
-#%xl(h,mp_repeat_on_btn.bmp,0,0)
-#%xl(i,mp_shuffle_off_btn.bmp,0,0)
-#%xl(j,mp_shuffle_once_btn.bmp,0,0)
-#%xl(k,mp_shuffle_all_btn.bmp,0,0)
+%xl(g,mp_repeat_off_btn.bmp,0,0)
+%xl(h,mp_repeat_on_btn.bmp,0,0)
+%xl(i,mp_shuffle_off_btn.bmp,0,0)
+%xl(j,mp_shuffle_once_btn.bmp,0,0)
+%xl(k,mp_shuffle_all_btn.bmp,0,0)
 
 ###### File info
 %V(0,14,-,16,3) %Vf(adae99) %Vb(000000)
@@ -72,13 +72,13 @@
 %?C<%Cd|%xd(n)>
 
 ###### Progress bar 
-%V(0,770,-,32,-) %Vf(adae99) %Vb(000000)
+%V(0,785,-,32,-) %Vf(adae99) %Vb(000000)
 %xd(b)
 %T(0,0,640,32,progressbar)
 %pb(0,0,640,32,progressbar-640x960x16.bmp)
 
 ###### Peak meter
-%V(0,770,-,32,-) %Vf(adae99) %Vb(000000)
+%V(0,785,-,32,-) %Vf(adae99) %Vb(000000)
 %pL(0,1,639,4,peakmeter-640x960x16.bmp)
 %pR(0,27,639,4,peakmeter-640x960x16.bmp)
 
