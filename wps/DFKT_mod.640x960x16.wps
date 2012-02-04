@@ -39,13 +39,11 @@
 %xl(j,mp-shuffle-640x960x16.bmp,0,0,2)
 
 ###### File info
-%V(200,0,240,20,3) %Vf(adae99) %Vb(000000)
-%ac%?fb<%?fv<%fbk VBR|%fbk CBR>|> %fkkHz
+%V(70,0,240,20,3) %Vf(adae99) %Vb(000000)
+%al%?fb<%?fv<%fbk VBR|%fbk CBR>|> %fkkHz
 
 ###### Track info
 %V(100,28,440,140,4) %Vf(ffffff) %Vb(000000)
-#%T(0,0,640,140,browse)
-#%T(0,0,640,140,menu,long_press)
 %Vf(adae99)
 %ac%s%?ia<%ia|%d(1)>
 %Vf(ffffff)

@@ -36,16 +36,16 @@
 #################
 
 ###### Volume level
-%V(0,0,30,11,3) %Vf(adae99) %Vb(000000)
+%V(2,0,60,11,3) %Vf(adae99) %Vb(000000)
 %al%pvdB
 
 ###### Playback mode
-%V(42,1,9,9,-) %Vf(adae99) %Vb(000000)
-%?mp<%xd(p,1)|%xd(p,2)|%xd(p,3)|%xd(p,4)|%xd(p,5)|%xd(p,6)|%xd(p,7)|%xd(p,8)|%xd(p,9)>
+#%V(42,1,9,9,-) %Vf(adae99) %Vb(000000)
+#%?mp<%xd(p,1)|%xd(p,2)|%xd(p,3)|%xd(p,4)|%xd(p,5)|%xd(p,6)|%xd(p,7)|%xd(p,8)|%xd(p,9)>
 
-###### Repeat/shuffle mode
-%V(61,1,9,9,-) %Vf(adae99) %Vb(000000)
-%?ps<%xd(r,3)|%?mm<|%xd(r,1)|%xd(r,2)|%xd(r,3)|%xd(r,4)>>
+####### Repeat/shuffle mode
+#%V(61,1,9,9,-) %Vf(adae99) %Vb(000000)
+#%?ps<%xd(r,3)|%?mm<|%xd(r,1)|%xd(r,2)|%xd(r,3)|%xd(r,4)>>
 
 ###### Battery
 %V(534,1,19,11,3) %Vf(adae99) %Vb(000000)
