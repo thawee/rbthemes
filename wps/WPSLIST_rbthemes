@@ -8,6 +8,7 @@ RSBS:
 Author: Thawee
 
 # Preferred font (including .fnt extension - leave blank for player):
+Font: 20-Terminus.fnt
 Font.600x1024x16: 46-Loma-Bold.fnt
 Font.640x960x16: 46-Loma-Bold.fnt
 
