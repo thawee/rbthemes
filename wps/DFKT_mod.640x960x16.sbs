@@ -18,7 +18,7 @@
 
 ###### Preload Fonts
 %Fl(2,46-Loma-Bold.fnt)
-%Fl(3,12-Terminus.fnt)
+%Fl(3,20-Terminus.fnt)
 
 ###### Preload Images
 %xl(p,playbackmode-640x960x16.bmp,0,0,9)
@@ -47,23 +47,10 @@
 %V(61,1,9,9,-) %Vf(adae99) %Vb(000000)
 %?ps<%xd(r,3)|%?mm<|%xd(r,1)|%xd(r,2)|%xd(r,3)|%xd(r,4)>>
 
-###### Hold switch
-#%V(81,1,9,9,-) %Vf(adae99) %Vb(000000)
-#%?mh<%xd(h,1)|%xd(h,2)>
-
-###### Disk activity
-#%V(474,1,9,9,-) %Vf(adae99) %Vb(000000)
-#%?lh<%xd(v)|>
-
 ###### Battery
 %V(534,1,19,11,3) %Vf(adae99) %Vb(000000)
 %?bp<%?bc<%t(0.1)%xd(b,3);%t(0.1)%xd(b,4);%t(0.1)%xd(b,5);%t(0.1)%xd(b,6);%t(0.1)%xd(b,7)|%xd(b,7)>|%?bl<%t(0.5)%xd(b,1);%t(0.5)%xd(b,2)|%xd(b,3)|%xd(b,4)|%xd(b,5)|%xd(b,6)|%xd(b,7)|%xd(b,7)>>
 
 ###### Date and time
-%V(559,0,80,10,3) %Vf(adae99) %Vb(000000)
+%V(559,0,80,20,3) %Vf(adae99) %Vb(000000)
 %ar%cd.%cm. %?cf<%cH:%cM>
-
-###### Separator line
-#%V(0,12,-,1,0) %Vf(-) %Vb(adae99)
-#%xd(s)
-

@@ -18,7 +18,7 @@
 
 ###### Preload Fonts
 %Fl(2,40-Loma-Bold.fnt)
-%Fl(3,12-Terminus.fnt)
+%Fl(3,20-Terminus.fnt)
 %Fl(4,36-Loma-Bold.fnt)
 
 ###### Preload Images
@@ -39,8 +39,8 @@
 %xl(j,mp-shuffle-640x960x16.bmp,0,0,2)
 
 ###### File info
-%V(0,14,-,16,3) %Vf(adae99) %Vb(000000)
-%al%?fb<%?fv<%fbk VBR|%fbk CBR>|> %fc%ac%?iv<ID3 v%iv|>%ar%fkkHz
+%V(200,0,240,20,3) %Vf(adae99) %Vb(000000)
+%ac%?fb<%?fv<%fbk VBR|%fbk CBR>|> %fkkHz
 
 ###### Track info
 %V(100,28,440,140,4) %Vf(ffffff) %Vb(000000)
@@ -67,8 +67,6 @@
 
 ###### Album art (640x600) 
 %V(0,180,640,600,-) %Vf(adae99) %Vb(000000)
-#%T(0,40,620,540,quickscreen)
-#%T(0,40,620,540,contextmenu,long_press)
 %Cl(0,0,640,600,c)
 %?C<%Cd|%xd(n)>
 
@@ -82,10 +80,6 @@
 %V(0,790,-,32,-) %Vf(adae99) %Vb(000000)
 %pL(0,1,639,4,peakmeter-640x960x16.bmp)
 %pR(0,27,639,4,peakmeter-640x960x16.bmp)
-
-###### Time info
-#%V(0,810,-,13,3) %Vf(adae99) %Vb(333333)
-#%al%?mp<-:--|%pc|%pc|%pc|%pc>%ac%?mp<-:--|%pt|%pt|%pt|%pt>%ar%?mp<-:--|%pr|%pr|%pr|%pr>
 
 ###### Example: %?mp<Stop|Play|Pause|Ffwd|Rew|Rec|Rec pause|FM|FM pause>
 
