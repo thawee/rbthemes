@@ -31,12 +31,10 @@
 %xl(f,button-ffwd-640x960x16.bmp,0,0)
 %xl(n,nocover-640x960x16.bmp,0,0)
 
-%xl(c,playbackmode-640x960x16.bmp,0,0,9)
-%xl(d,repeatmode-640x960x16.bmp,0,0,4)
 %xl(e,battery-640x960x16.bmp,0,0,7)
  
-%xl(i,mp-repeat-640x960x16.bmp,0,0,3)
-%xl(j,mp-shuffle-640x960x16.bmp,0,0,2)
+%xl(i,repeatmode-640x960x16.bmp,0,0,3)
+%xl(j,shuffle-640x960x16.bmp,0,0,2)
 
 ###### File info
 %V(70,0,240,20,3) %Vf(adae99) %Vb(000000)

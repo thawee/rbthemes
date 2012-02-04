@@ -21,10 +21,6 @@
 %Fl(3,20-Terminus.fnt)
 
 ###### Preload Images
-%xl(p,playbackmode-640x960x16.bmp,0,0,9)
-%xl(r,repeatmode-640x960x16.bmp,0,0,4)
-#%xl(h,holdswitch-640x960x16.bmp,0,0,2)
-#%xl(v,virtualled-640x960x16.bmp,0,0)
 %xl(b,battery-640x960x16.bmp,0,0,7)
 #%xl(s,separator-line-640x960x16.bmp,0,0)
 
@@ -36,21 +32,13 @@
 #################
 
 ###### Volume level
-%V(2,0,60,11,3) %Vf(adae99) %Vb(000000)
+%V(2,0,60,20,3) %Vf(adae99) %Vb(000000)
 %al%pvdB
 
-###### Playback mode
-#%V(42,1,9,9,-) %Vf(adae99) %Vb(000000)
-#%?mp<%xd(p,1)|%xd(p,2)|%xd(p,3)|%xd(p,4)|%xd(p,5)|%xd(p,6)|%xd(p,7)|%xd(p,8)|%xd(p,9)>
-
-####### Repeat/shuffle mode
-#%V(61,1,9,9,-) %Vf(adae99) %Vb(000000)
-#%?ps<%xd(r,3)|%?mm<|%xd(r,1)|%xd(r,2)|%xd(r,3)|%xd(r,4)>>
-
 ###### Battery
-%V(534,1,19,11,3) %Vf(adae99) %Vb(000000)
+%V(615,4,19,11,3) %Vf(adae99) %Vb(000000)
 %?bp<%?bc<%t(0.1)%xd(b,3);%t(0.1)%xd(b,4);%t(0.1)%xd(b,5);%t(0.1)%xd(b,6);%t(0.1)%xd(b,7)|%xd(b,7)>|%?bl<%t(0.5)%xd(b,1);%t(0.5)%xd(b,2)|%xd(b,3)|%xd(b,4)|%xd(b,5)|%xd(b,6)|%xd(b,7)|%xd(b,7)>>
 
 ###### Date and time
-%V(559,0,80,20,3) %Vf(adae99) %Vb(000000)
+%V(490,0,100,20,3) %Vf(adae99) %Vb(000000)
 %ar%cd.%cm. %?cf<%cH:%cM>
