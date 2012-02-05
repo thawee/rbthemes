@@ -21,13 +21,14 @@
 # Define the title of the main menu
 %menu_start "main" "Database"
 "All Tracks"    -> title = "fmt_direct" ? genre != "<Untagged>"
-"English Tracks" -> title = "fmt_mood" ? genre @ "Pop|Rock|Jazz|Electro|Bossa Nova|Audiophile"
 "Genre"    -> genre    -> title = "fmt_genre" ? genre != "<Untagged>"
-"LungTung & MohLum" -> title = "fmt_mood" ? genre @ "Thai LungTung|Thai LungKrung"
-"Recently Played" -> title = "fmt_lastplayed" ? playcount > "0"
-"Rockin' Out" -> title = "fmt_mood" ? genre @ "Thai Rock|Rock"
-"Soundtrack" -> title = "fmt_mood" ? album ~ "Ost."
+#"English Tracks" -> title = "fmt_mood" ? genre @ "Pop|Rock|Jazz|Electro|Bossa Nova|Audiophile"
 "Thai Tracks" -> title = "fmt_mood" ? genre ~ "Thai"
+"English Tracks" -> title = "fmt_mood" ? genre !~ "Thai"
+"LungTung & MohLum" -> title = "fmt_mood" ? genre ~ "LungTung" | genre ~ "MohLum"
+"Rockin' Out" -> title = "fmt_mood" ? genre ~ "Rock"
+#"Soundtrack" -> title = "fmt_mood" ? album ~ "Ost."
+"Recently Played" -> title = "fmt_lastplayed" ? playcount > "0"
 
 # And finally set main menu as our root menu
 %root_menu "main"
