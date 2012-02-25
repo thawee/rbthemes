@@ -17,4 +17,7 @@ meizu m9 (m9)
  $cat WPSLIST_DFTK >> WPSLIST
  $cat wpsbuild_DFTK.pl >> wpsbuild.pl
  $cd ../
-5. build and build apk 
+5. build and build apk
+
+
+the theme contain image made by ~NOM15 (http://nom15.deviantart.com/) 
