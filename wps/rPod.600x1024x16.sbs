@@ -1,0 +1,26 @@
+###################################################
+#                                                 #
+#  Theme           rPod for Android 600x1024x16   #
+#  Author          Thawee Prakaipetch             #
+#  Target          Android RaaA (600x1024x16)     #
+#  Version         0.1 beta                       #
+#  Last updated    2011 12 23                     #
+#  License         CC-BY-SA 3.0                   #
+#                                                 #
+###################################################
+
+###### Main
+%wd
+%Tp
+
+###### Backdrop; use theme
+#%X(rPod-600x1024x16.bmp)
+
+###### Preload Fonts
+%Fl(2,40-Loma-Bold.fnt)
+%Fl(3,12-Terminus.fnt)
+
+###### Preload Images
+
+###### UI Viewport
+%Vi(-,0,20,-,-,-)  %Vf(ffffff) %Vb(000000)
